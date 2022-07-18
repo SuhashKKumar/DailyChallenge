@@ -87,7 +87,7 @@ function App() {
                     )}
                   </div>
                   <div className="ps-5">
-                    <h3>{birth.name}</h3>
+                    <h4>{birth.name}</h4>
                     <h3>Age: {birth.age}</h3>
                   </div>
                 </div>
