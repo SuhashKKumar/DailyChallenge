@@ -15,7 +15,7 @@ function App() {
     return type < 10 ? `0${type}` : `${type}`;
   };
   let birthdayMonthAndDay = `${addingZeros(month+1)}${addingZeros(date)} `;
-  // let birthdayMonthAndDay = "0325";
+  // let birthdayMonthAndDay = "0325"
   // let birthdayMonthAndDay = "0711";
 
   const [birthdays, setBirthdays] = useState([]);
