@@ -1,0 +1,151 @@
+@font-face {
+  font-family:'TinyChalk' ;
+  src: url('./assets/fonts/TinyChalk.otf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  /* overflow: hidden; */
+  color: #D4F6CC;
+}
+html {
+  font-size: 62.5%;
+}
+
+.App{
+  position: absolute;
+}
+/* .second_div{
+  position: relative;
+  top: -42rem;
+  right: 0%;
+
+} */
+.container{
+  position: relative;
+  top: 15%;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10rem auto;
+  position: absolute;
+}
+
+
+/* .left_container_before:hover{
+  transform: translateX(-20rem);
+}
+.left_container_before:hover ~ .right_container_before{
+  transform: translateX(18.3rem);
+}
+.left_container_before:hover ~ .image{
+  transform: rotateZ(90deg);
+} */
+.left_container_before{
+  right: -20rem;
+  position: relative;
+  padding: 1rem 2rem;
+  background-color: #D4F6CC;
+  justify-self: end;
+  z-index: 12;
+  width: 50%;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  transition: transform 700ms ease-out;
+}
+.image{
+  height: 15rem;
+}
+.left_container_after{
+  position: relative;
+  right: 0rem;
+  padding: 1rem 2rem;
+  background-color: #D4F6CC;
+  justify-self: end;
+  z-index: 12;
+  width: 50%;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+.left_container_after .image{
+transform: rotateZ(-30deg);
+}
+.right_container_before{
+  right: 18.3rem;
+  position: relative;
+  background-color: #003865;
+  padding: 1rem 2rem;
+  justify-self: start;
+  width: 50%;
+  z-index: 10;
+  /* display: none; */
+  transition: transform 700ms ease-out;
+}
+.right_container_after{
+  position: relative;
+  background-color: #003865;
+  padding: 1rem 2rem;
+  justify-self: start;
+  width: 50%;
+  z-index: 10;
+  right: 0rem;
+}
+
+.right_container h2{
+  margin-top: 1rem;
+}
+h1{
+  font-family:  'TInyChalk','Rubik', sans-serif;
+  font-size: 5rem;
+  margin-top: 3rem;
+  font-weight: lighter;
+  font-size: 7rem;
+  letter-spacing: -0.56rem;
+}
+.size_buttons_container{
+  margin-top: 2rem;
+}
+.button{
+  padding: 0.8rem;
+  font-weight: bold;
+  border: 2px solid #D4F6CC;
+  transition: all 500ms ease-out;
+  cursor: pointer;
+}
+.price_container{
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+.price_container h2{
+  font-size: 2rem;
+}
+.primary_button{
+  color: #003865;
+  background-color: #D4F6CC;
+}
+.primary_button:hover{
+  color: #D4F6CC;
+  background-color: #003865;
+}
+.secondary_button{
+  margin-top: 1rem;
+  color: #D4F6CC;
+  background-color: #00386500;
+  margin-right: 3.4rem;
+  display: inline-flex;
+}
+.secondary_button:last-child{
+  margin-right:0 ;
+}
+.secondary_button:hover{
+  color: #003865;
+  background-color: #D4F6CC;
+}
