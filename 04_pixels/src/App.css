@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'pixel';
+  src: url('../src/assets/fonts/pixel.ttf');
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+html{
+  font-size: 62.5%;
+  background-color: #f5e8e4;
+}
+.App{
+  background-color: #f5c7a9;
+  width: 90vw;
+  height: 75vh;
+  margin: 5.5rem auto;
+  padding: 2rem 4rem;
+}
+.project_title{
+  font-family: 'pixel';
+  font-size: 3.5rem;
+}
+

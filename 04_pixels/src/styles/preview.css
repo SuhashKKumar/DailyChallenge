@@ -1,0 +1,33 @@
+.preview{
+    /* text-align: center; */
+}
+
+img{
+    align-self: center;
+    width: 400px;
+    height: 308px;
+    object-fit: cover;
+    /* transform-origin: center center ; */
+    /* transform-origin: 20% 40%; */
+    
+}
+.image_container{
+    display: grid;
+}
+.image_container div{
+    align-self: center;
+    justify-self: center;
+}
+.image_container button{
+    align-self: flex-end;
+    justify-self: flex-start;
+    z-index: 10;
+}
+.upload__image-wrapper{
+    background-color: aqua;
+    display: flex;
+
+} 
+.upload__image-wrapper button{
+    
+}
