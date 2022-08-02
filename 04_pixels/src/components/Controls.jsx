@@ -16,8 +16,8 @@ const Controls = ({
 }) => {
   const filterStyles = {
     fontSize: "4rem",
-    color: "#d1512d",
-    backgroundColor: "#f5e8e4",
+    color: "#FF0063",
+    backgroundColor: "#EAF6F6",
     padding: "0.5rem",
     // transform:'rotate(45deg)'
   };
@@ -98,9 +98,9 @@ const Controls = ({
         <h2>Filters</h2>
         <div className="buttons">
           <button onClick={brightHandler}>Brightness</button>
+          <button onClick={grayHandler}>Contrast</button>
           <button onClick={saturateHandler}>Saturation</button>
           <button onClick={inverseHandler}>Inversion</button>
-          <button onClick={grayHandler}>GraScale</button>
         </div>
         <label>
           <div className="label_container">

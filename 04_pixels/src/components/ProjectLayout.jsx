@@ -11,7 +11,7 @@ const ProjectLayout = () => {
     brightness:1,
     saturation:1,
     inversion: 0,
-    grayscale:0,
+    grayscale:1,
   }
   const [range, setRange] = useState(ranges);
 

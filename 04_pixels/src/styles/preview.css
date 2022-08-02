@@ -7,6 +7,7 @@ img{
     width: 400px;
     height: 308px;
     object-fit: cover;
+
     /* transform-origin: center center ; */
     /* transform-origin: 20% 40%; */
     
@@ -24,7 +25,7 @@ img{
     z-index: 10;
 }
 .upload__image-wrapper{
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
 
 } 

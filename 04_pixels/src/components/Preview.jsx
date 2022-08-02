@@ -8,7 +8,8 @@ const Preview = ({ flipHorizontal, range, flipVertical, rotateRight }) => {
     width: "407px",
     transformOrigin: "center",
     transform: `rotate(${rotateRight}deg)`,
-    filter: `grayscale(${range.grayscale})`,
+    filter: `contrast(${range.grayscale})`,
+    
   };
 
   const rotateX = {

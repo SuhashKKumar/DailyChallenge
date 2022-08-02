@@ -26,7 +26,7 @@
 }
 button{
     padding: 1rem 2rem ;
-    color: #d1512d;
+    color: #FF0063;
     border: none;
     font-weight: 600;
     font-size: 1.5rem;
@@ -36,8 +36,8 @@ button{
     width: 100%;
 }
 button:hover{
-    background-color: #d1512d;
-    color: #f5c7a9;
+    background-color: #FF0063;
+    color: #EAF6F6;
 }
 .label_container{
     display: flex;
@@ -68,7 +68,7 @@ button:hover{
     width: 1.3rem;
     height:  1.3rem;
     border-radius: 50%;
-    background: #d1512d;
+    background: #FF0063;
     cursor: pointer;
   }
   
@@ -76,7 +76,7 @@ button:hover{
     width:  1.3rem;
     height:  1.3rem;
     border-radius: 50%;
-    background: #04AA6D;
+    /* background: #04AA6D; */
     cursor: pointer;
   }
   .rotate_flip{
@@ -94,7 +94,7 @@ button:hover{
 
 .inputfile:focus + label,
 .inputfile + label:hover {
-    color: #f5c7a9;
+    color: #EAF6F6;
 }
 .inputfile + label {
 	cursor: pointer; /* "hand" cursor */

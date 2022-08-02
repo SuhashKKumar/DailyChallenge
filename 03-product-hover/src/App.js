@@ -7,12 +7,14 @@ function App() {
       <div
         style={{ width: "100vw", height: "50vh", backgroundColor: "#003865" }}
       ></div>
-      <div className="second_div"
+      <div
+        className="second_div"
         style={{ width: "100vw", height: "50vh", backgroundColor: "#D4F6CC" }}
       ></div>
-      <ProductContainer/>
+      <ProductContainer />
     </div>
   );
 }
 
 export default App;
+
