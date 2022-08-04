@@ -1,0 +1,43 @@
+.hero_section {
+  /* width: 100vw; */
+  height: 95vh;
+  background-image: linear-gradient(
+      to bottom,
+     
+      rgba(51, 51, 51, 0) 75%,
+      var(--color1) 100%
+    ),
+    url("../assets/images/monkey.jpg");
+  background-position: top left;
+  background-size: auto;
+  background-blend-mode: lighten;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+.hero_title {
+  font-family: "AUBREY";
+  font-size: 8rem;
+  font-weight: 500;
+  color: var(--color4);
+  margin-bottom: 2rem;
+  line-height: 1.05;
+}
+.hero_subsection button {
+  background: none;
+  font-family: "Steelfish";
+  border: none;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  color: var(--color3);
+  transition: border 200ms 300ms ease-out;
+}
+.right_arrow {
+  vertical-align: middle;
+  transition: all 300ms ease-out;
+}
+
+.hero_subsection button:hover > .right_arrow {
+  transform: translateX(1rem);
+}

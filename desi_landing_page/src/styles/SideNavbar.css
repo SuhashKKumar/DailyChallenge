@@ -1,0 +1,25 @@
+.side_navbar{
+    position: fixed;
+    top: 35%;
+    right: 0;
+    background-color: var(--color2);
+    padding: 2.5rem 1rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.side_navbar_bg{
+    display: none;
+}
+.side_navbar_lists{
+    position: relative;
+}
+.side_navbar_lists li{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+
+.side_navbar_lists li:last-child{
+    margin-bottom: 0rem;
+}
+

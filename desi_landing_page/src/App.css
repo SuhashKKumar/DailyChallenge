@@ -1,0 +1,61 @@
+:root{
+  --color1: #2C3639;
+  --color15: #2c363979;
+  --color2: #3F4E4F;
+  --color25: #3f4e4f7f;
+  --color3: #A27B5C;
+  --color35: #a27b5c83;
+  --color4:#DCD7C9;
+  --color45:#dcd7c97f;
+}
+
+@font-face {
+  font-family: 'Steelfish';
+  src: url('../src/assets/fonts/Steelfish.otf');
+}
+@font-face {
+  font-family: 'Louis';
+  src: url('../src/assets/fonts/Louis.ttf');
+}
+@font-face {
+  font-family: 'AUBREY';
+  src: url('../src/assets/fonts/AUBREY.TTF');
+}
+
+html{
+  font-size: 62.5%;
+  background-color: var(--color1);
+  font-family: 'Steelfish';
+}
+body{
+  margin:0;
+}
+*{
+  padding: 0;
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color4); 
+  border-radius: 20px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:var(--color3); 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8d6240; 
+}
+
+

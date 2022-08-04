@@ -1,0 +1,48 @@
+
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 7rem;
+    width: 100%;
+    background-color: var(--color15);
+}
+.navbar_bg{
+    display: none;
+}
+.sub_navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 0.5rem;
+}
+.navbar_title{
+    font-size: 3rem;
+    vertical-align: middle;
+    color: var(--color3);
+    font-family: 'AUBREY';
+}
+.logo{
+    font-size: 5rem;
+    color: var(--color3);
+    /* margin-left: 5rem; */
+    
+
+}
+.navbar ul{
+    /* display: inline ; */
+    display: flex;
+    gap: 3rem;
+    /* margin-right:5rem; */
+    /* flex: 70%; */
+} 
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--color3);
+    font-size: 3.5rem;
+}

@@ -7,12 +7,12 @@ const ProjectLayout = () => {
   const [flipHorizontal, setFlipHorizontal] = useState(0);
   const [flipVertical, setFlipVertical] = useState(0);
 
-  const ranges={
-    brightness:1,
-    saturation:1,
+  const ranges = {
+    brightness: 1,
+    saturation: 1,
     inversion: 0,
-    grayscale:1,
-  }
+    grayscale: 1,
+  };
   const [range, setRange] = useState(ranges);
 
   return (
