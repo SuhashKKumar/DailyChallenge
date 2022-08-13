@@ -3,8 +3,12 @@
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 .footer h3, .footer h4{
     font-family: 'Louis' !important;
     color: var(--color4);
+    letter-spacing: 2px;
+    font-weight: 500;
+
 }
