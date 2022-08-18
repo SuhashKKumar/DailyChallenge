@@ -99,7 +99,7 @@ function App() {
           }
         })}
       </div>
-      <footer className="mt-2 " >Made by SuhashKKumar on 17July 2022</footer>
+      <footer className="mt-2 ">Made by SuhashKKumar on 17July 2022</footer>
     </div>
   );
 }
