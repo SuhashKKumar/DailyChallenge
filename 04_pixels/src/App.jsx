@@ -8,9 +8,6 @@ function App() {
   return (
     <div className="App">
     <h1 className='project_title' >Pixels</h1>
-    // 
-    // grayscale has been replaced with contrast
-    // 
       <ProjectLayout/>
     </div>
   )
