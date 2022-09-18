@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useDispatch, useSelector} from 'react-redux'
 import {
   TbRotate,
   TbRotateClockwise,
@@ -6,6 +7,7 @@ import {
   TbFlipVertical,
 } from "react-icons/tb";
 import "../styles/controls.css";
+
 const Controls = ({
   setRotateRight,
   setRange,
@@ -25,6 +27,7 @@ const Controls = ({
   const { brightness, grayscale, inversion, saturation } = range;
   const rangeHandler = (e) => {
     const { name, value } = e.target;
+    
     setRange({ ...range, [name]: value });
   };
   const rotateRightHandler = () => {
@@ -110,7 +113,7 @@ const Controls = ({
                 : inverse
                 ? "Inversion"
                 : gray
-                ? "Grayscale"
+                ? "Contrast"
                 : "Brightness"}
             </h2>
             <h2>
