@@ -1,0 +1,23 @@
+.service-container{
+    margin: 100px 170px;
+    text-align: center;
+}
+
+.service-headline{
+    font-weight: 100;
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.service-headline-span{
+    font-family: var(--primary-font) !important ;
+    color: var(--primary-color);
+    letter-spacing: -0.14ch;
+}
+.service-paragraph{
+    margin-top: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 430px;
+}

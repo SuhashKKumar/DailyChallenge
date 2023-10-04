@@ -1,0 +1,7 @@
+.logo-container{
+    padding: 75px 170px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #F8F8F8;
+}
