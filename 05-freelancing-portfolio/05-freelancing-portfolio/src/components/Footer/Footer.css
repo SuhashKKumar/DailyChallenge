@@ -18,7 +18,7 @@ font-weight: 500;
 }
 .footer{
     text-align: left;
-    margin: 100px 0;
+    margin: 140px 0;
     display: flex;
     justify-content: space-evenly;
     gap: 100px;
