@@ -1,0 +1,44 @@
+.secondary-hero{
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+}
+.secondary-left{
+    width: 50%;
+    display: flex;
+    height: 350px;
+    gap: 2rem;
+}
+.secondary-right{
+    margin-left: 4rem;
+    align-self: flex-end;
+}
+.secondary-right > .secondary-info{
+    display: flex;
+    gap: 4rem;
+}
+.about h1{
+    font-size: 76px;
+    font-weight: 500;
+    line-height: 1;
+}
+.about h6{
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.explore{
+    width: 140%;
+    display: flex;
+    margin-top: 3rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.6rem 0.6rem 2rem;
+    border-radius: 45px;
+}
+.explore > img{
+    background-color: var(--white-color);
+    border-radius: 50%;
+}

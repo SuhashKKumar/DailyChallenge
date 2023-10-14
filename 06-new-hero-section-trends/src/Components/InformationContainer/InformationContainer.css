@@ -1,0 +1,35 @@
+.info-container {
+  position: relative;
+  left: -45%;
+}
+
+.icon {
+  background-color: var(--white-color);
+  padding: 0.6rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0%;
+  top: 15%;
+}
+.info-tile {
+  position: absolute;
+  z-index: 5;
+  top: 60%;
+  display: flex;
+  align-items: flex-end;
+}
+.info-tile > .info-text >h1{
+    font-size: 56px;
+    width: 120px;
+    line-height:1;
+    font-weight: 400;
+}
+.info-tile > .info-text >h2{
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.info-tile > .info-icon{
+    position: absolute;
+    left: 200%;
+}

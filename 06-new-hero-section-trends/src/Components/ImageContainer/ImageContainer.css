@@ -1,0 +1,12 @@
+.image-item:nth-child(1){
+    margin: 0;
+}
+.image-item{
+    margin-left: -20px;
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+}
+.image-container{
+    display: inline-block;
+    vertical-align: middle;
+}
