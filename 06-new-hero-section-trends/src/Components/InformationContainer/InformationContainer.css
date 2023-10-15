@@ -5,7 +5,7 @@
 
 .icon {
   background-color: var(--white-color);
-  padding: 0.6rem;
+  padding: 0.6em;
   border-radius: 50%;
   position: absolute;
   left: 0%;
@@ -19,13 +19,13 @@
   align-items: flex-end;
 }
 .info-tile > .info-text >h1{
-    font-size: 56px;
-    width: 120px;
+    font-size: 3.5rem;
+    max-width: 7.5rem;
     line-height:1;
     font-weight: 400;
 }
 .info-tile > .info-text >h2{
-    font-size: 26px;
+    font-size: 1.6rem;
     font-weight: 400;
     text-transform: uppercase;
 }
