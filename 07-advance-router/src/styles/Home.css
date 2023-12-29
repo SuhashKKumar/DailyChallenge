@@ -1,29 +1,26 @@
 .home-sub-container{
     display: flex;
-    /* align-items: start; */
     min-height: 35rem;
     gap: 5rem;
 }
 
 .home-headline-container{
     max-width: 45%;
-    /* align-self: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2em;
+    gap: 3em;
 }
-.home-headline{
+.headline{
     font-size: 4rem;
 }
-.home-para{
+.para{
     max-width: 75%;
 }
-.home-img{
+.img{
     max-width: 100%;
     flex: 1;
-    background:  url('../../assets/arches-national-park-1846759_1920.jpg') var(--first-color) 10% 75% no-repeat;
-    /* background-size: cover; */
+    background:  url('../assets/home-hero.jpg') var(--first-color) 10% 75% no-repeat;
     border-radius: 0.5rem;
 }
 .home-box-headline{

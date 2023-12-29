@@ -36,22 +36,22 @@
 }
 
 /* background color utilities */
-.first-bg-color {
+.first-bg{
   background-color: var(--first-color);
 }
-.second-bg-color {
+.second-bg{
   background-color: var(--second-color);
 }
-.third-bg-color {
+.third-bg{
   background-color: var(--third-color);
 }
-.fourth-bg-color {
+.fourth-bg{
   background-color: var(--fourth-color);
 }
-.white-bg-color {
+.white-bg{
   background-color: var(--white-color);
 }
-.black-bg-color {
+.black-bg{
   background-color: var(--black-color);
 }
 
