@@ -1,0 +1,12 @@
+.box-container{
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 1em 2em;
+    border-radius: 0.5rem;
+    /* max-width: 25%; */
+    /* width: auto; */
+}
+
