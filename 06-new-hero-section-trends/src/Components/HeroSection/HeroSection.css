@@ -76,7 +76,7 @@
 }
 .dots,
 .dots > span {
-  font-size: 100px;
+  font-size: 8rem;
   margin: 0;
   line-height: 0;
 }
@@ -103,11 +103,70 @@
 .glass-container > img {
   border-radius: 100%;
 }
-.glass-container>h5{
-    margin-right: 0.6em;
+.glass-container > h5 {
+  margin-right: 0.6em;
 }
-.glass-text>h5, .glass-text>h4{
-    font-weight: 400;
-    font-size: 85%;
+.glass-text > h5,
+.glass-text > h4 {
+  font-weight: 400;
+  font-size: 85%;
 }
 
+/* media query for 1440px */
+
+@media (max-width: 1440px) {
+  .hero-section {
+    gap: 5rem;
+    max-width: 95%;
+  }
+  .left-section {
+    margin: 3em 0;
+  }
+  .hero-line {
+    margin: 2em 0 1em 0;
+  }
+  .hero-headline {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+  .text-container {
+    gap: 33%;
+  }
+
+  .image-box {
+    width: 90%;
+    height: 90%;
+  }
+  .image-box::before {
+    left: 83.6%;
+    top: 0%;
+  }
+  .image-box::after {
+    top: 16.7%;
+    right: 0%;
+  }
+  .dots {
+    left: 70%;
+    top: 10%;
+  }
+  .dots,
+  .dots > span {
+    font-size: 8rem;
+  }
+  .glass-container {
+    top: 75%;
+    right: 19%;
+  }
+  .glass-container > img {
+    border-radius: 100%;
+  }
+  .glass-container > h5 {
+    margin-right: 0.6em;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 375px) {
+}

@@ -1,6 +1,4 @@
-
-
-.main-container{
+.main-container {
   margin: 3.5em auto;
   max-width: 90vw;
   min-height: 90vh;
@@ -8,13 +6,9 @@
   border-radius: 1.2em;
   padding: 2em 3em;
 }
-.horizontal-line{
+.horizontal-line {
   color: var(--background-grey);
   margin: 1em 0 2em 0;
-
 }
-
-
-
 
 
