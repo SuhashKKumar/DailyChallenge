@@ -9,7 +9,6 @@ const Vans = () => {
       .then((res) => setVans(res.vans))
       .catch((error) => console.log(error));
   }, []);
-  console.log(vans, "api response");
   return (
     <div className="vans-container">
       <div className="vans-sub-container">
@@ -21,26 +20,39 @@ const Vans = () => {
           <p className="clear-filter ">Clear filters</p>
         </div>
       </div>
-      <div className="vans-list-container">
-        {vans.map(({ id, imageUrl, name, price, type }) => {
-          return (
-            <div key={id}>
-              <img
-                src={imageUrl}
-                alt={`picture of ${name}`}
-                width={300}
-                height={300}
-              />
-              <div className="van-details-contaienr">
-                <h3>{name}</h3>
-                <h3>
-                  {price} <span>/day</span>
-                </h3>
-                <h4 className="white-color">{type}</h4>
+      <div className="for-center">
+        <div className="vans-list-container">
+          {vans.map(({ id, imageUrl, name, price, type }) => {
+            return (
+              <div className="vans-layout" key={id}>
+                <img
+                  src={imageUrl}
+                  alt={`picture of ${name}`}
+                  width={300}
+                  height={300}
+                />
+                <div className="van-model-price">
+                  <h3>{name}</h3>
+                  <h3>
+                    {price}
+                    <span>/day</span>
+                  </h3>
+                </div>
+                <h4
+                  className={` van-type white-color ${
+                    type === "simple"
+                      ? "first-bg"
+                      : type === "luxury"
+                      ? "second-bg"
+                      : "fourth-bg black-color"
+                  }`}
+                >
+                  {type}
+                </h4>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

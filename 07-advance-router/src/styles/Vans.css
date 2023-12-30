@@ -1,0 +1,44 @@
+.vans-sub-container {
+}
+
+.van-filter-items {
+    margin: 1em 0;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+.filter-item {
+    padding: 0.4em 1em;
+    border-radius: 0.3rem;
+}
+
+.clear-filter {
+    text-decoration: underline;
+}
+.for-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vans-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-content: center; */
+    gap: 2em 6em;
+}
+.vans-layout > img{
+    border-radius: 0.4em;
+}
+
+.van-model-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0 ;
+}
+.van-type{
+    display: inline;
+    padding: 0.5em 2em;
+    border-radius: 0.4em;
+}
