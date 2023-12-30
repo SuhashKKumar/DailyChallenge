@@ -1,5 +1,5 @@
 // import van from '../../assets/wedding-4297343_1920.jpg'
-import Box from "../Components/Box/Box";
+import Box from "../Components/Box";
 import "../styles/Home.css";
 const Home = () => {
   return (
@@ -29,7 +29,7 @@ const Home = () => {
           <br />
           Your van is ready.
         </h2>
-        <button className="home-box-btn black-bg black-border white-color">
+        <button className="btn black-bg black-border white-color">
           Explore our vans
         </button>
       </Box>

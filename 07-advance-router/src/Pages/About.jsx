@@ -10,7 +10,7 @@ const About = () => {
         Add adventure to your life by joining the #VanLife movement. Rent the
         perfect van to make your perfect road trip.
       </p>
-      <button className="about-btn white-color first-bg first-border">
+      <button className="btn white-color first-bg first-border">
         Find your van
       </button>
     </div>
