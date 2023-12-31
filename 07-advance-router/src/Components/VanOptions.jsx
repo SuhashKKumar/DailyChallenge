@@ -1,5 +1,4 @@
-const VanOptions = (props) => {
-  const type = { props };
+const VanOptions = ({type}) => {
   return (
     <h4
       className={` van-type white-color ${

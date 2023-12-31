@@ -13,7 +13,7 @@ const Vans = () => {
   return (
     <div className="vans-container">
       <div className="vans-sub-container">
-        <h2 className="home-box-headline">Explore our van options</h2>
+        <h1 className="headline">Explore our van options</h1>
         <div className="van-filter-items">
           <p className="filter-item second-bg">Simple</p>
           <p className="filter-item second-bg">Luxury</p>
@@ -36,7 +36,7 @@ const Vans = () => {
                   <div className="van-model-price">
                     <h3>{name}</h3>
                     <h3>
-                      {price}
+                      ${price}
                       <span>/day</span>
                     </h3>
                   </div>
