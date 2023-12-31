@@ -1,0 +1,16 @@
+.van-container{
+    margin: 2em 0 5em 0;
+}
+.van-large{
+    margin: 2em 0;
+}
+.van-sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.van-sub-container-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

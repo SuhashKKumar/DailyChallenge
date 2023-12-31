@@ -1,32 +1,42 @@
 import { useState, useEffect } from "react";
-import vanLarge from "../assets/cream-van-large.svg";
-import ".././styles/Van.css";
 import VanOptions from "../Components/VanOptions";
+import ".././styles/VanDetail.css";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-const VanDetail = (props) => {
-    const [vanDetails, setVanDetails] = useState([])
+const VanDetail = () => {
+  const [vanDetails, setVanDetails] = useState();
+  const { id } = useParams();
   useEffect(() => {
-    fetch(`/api/vans/${""}`)
+    fetch(`/api/vans/${id}`)
       .then((res) => res.json())
-      .then((res) => console.log(res, "from van"))
+      .then((data) => setVanDetails(data.vans))
       .catch((error) => console.log(error, "from van"));
-  }, []);
+  }, [id]);
 
-  console.log(vanDetails, setVanDetails, props);
+  console.log(vanDetails, "van details");
   return (
     <div className="van-container">
-      <p className="clear-filter">← Back to all vans</p>
-      <img src={vanLarge} alt="single van" width={500} height={500} />
-      <VanOptions type={"Simple"} />
-      <h1 className="headline">Modest Explorer</h1>
-      <h3>$60/day</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at arcu
-        consequat, tristique metus sit amet, rutrum lacus. Fusce dolor enim,
-        hendrerit quis facilisis sit amet, ornare et velit. Curabitur feugiat,
-        purus id feugiat sagittis, lectus enim interdum quam, accumsan accumsan
-        velit tellus vitae felis. Aenean semper, ligula vitae hendrerit.{" "}
-      </p>
+      <Link to="/vans" className="clear-filter">
+        ← Back to all vans
+      </Link>
+      <div className="van-sub-container">
+        <div className="van-sub-container-left">
+          <h1 className="headline">{vanDetails?.name}</h1>
+          <h2>${vanDetails?.price}/day</h2>
+          <p className="para">{vanDetails?.description}</p>
+          <VanOptions type={vanDetails?.type} />
+        </div>
+        <div className="van-sub-container-right">
+          <img
+            className="van-large"
+            src={vanDetails?.imageUrl}
+            alt="single van"
+            width={450}
+            height={450}
+          />
+        </div>
+      </div>
     </div>
   );
 };
