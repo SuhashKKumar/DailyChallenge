@@ -1,3 +1,4 @@
+import VanOptions from "../Components/VanOptions";
 import "../styles/Vans.css";
 import { useState, useEffect } from "react";
 const Vans = () => {
@@ -27,7 +28,7 @@ const Vans = () => {
               <div className="vans-layout" key={id}>
                 <img
                   src={imageUrl}
-                  alt={`picture of ${name}`}
+                  alt={`picture of ${name} van`}
                   width={300}
                   height={300}
                 />
@@ -39,17 +40,7 @@ const Vans = () => {
                       <span>/day</span>
                     </h3>
                   </div>
-                  <h4
-                    className={` van-type white-color ${
-                      type === "simple"
-                        ? "first-bg"
-                        : type === "luxury"
-                        ? "second-bg"
-                        : "fourth-bg black-color"
-                    }`}
-                  >
-                    {type}
-                  </h4>
+                 <VanOptions type={type} />
                 </div>
               </div>
             );
