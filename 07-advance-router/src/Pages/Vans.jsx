@@ -31,24 +31,26 @@ const Vans = () => {
                   width={300}
                   height={300}
                 />
-                <div className="van-model-price">
-                  <h3>{name}</h3>
-                  <h3>
-                    {price}
-                    <span>/day</span>
-                  </h3>
+                <div className="van-details-container">
+                  <div className="van-model-price">
+                    <h3>{name}</h3>
+                    <h3>
+                      {price}
+                      <span>/day</span>
+                    </h3>
+                  </div>
+                  <h4
+                    className={` van-type white-color ${
+                      type === "simple"
+                        ? "first-bg"
+                        : type === "luxury"
+                        ? "second-bg"
+                        : "fourth-bg black-color"
+                    }`}
+                  >
+                    {type}
+                  </h4>
                 </div>
-                <h4
-                  className={` van-type white-color ${
-                    type === "simple"
-                      ? "first-bg"
-                      : type === "luxury"
-                      ? "second-bg"
-                      : "fourth-bg black-color"
-                  }`}
-                >
-                  {type}
-                </h4>
               </div>
             );
           })}

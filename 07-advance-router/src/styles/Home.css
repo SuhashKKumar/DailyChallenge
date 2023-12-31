@@ -1,6 +1,10 @@
+
+.home-container{
+    margin-bottom: 5em;
+}
 .home-sub-container{
     display: flex;
-    min-height: 35rem;
+    min-height: 37rem;
     gap: 5rem;
 }
 

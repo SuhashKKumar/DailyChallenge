@@ -1,4 +1,5 @@
-.vans-sub-container {
+.vans-container {
+    margin-bottom: 5em;
 }
 
 .van-filter-items {
@@ -30,15 +31,21 @@
 .vans-layout > img{
     border-radius: 0.4em;
 }
+.van-details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
 
 .van-model-price {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1em 0 ;
 }
 .van-type{
-    display: inline;
+    /* display: inline; */
     padding: 0.5em 2em;
     border-radius: 0.4em;
+    justify-self: left;
+    align-self: flex-start;
 }
