@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import VanOptions from "../Components/VanOptions";
 import "../styles/Vans.css";
 import { useState, useEffect } from "react";
@@ -25,7 +26,7 @@ const Vans = () => {
         <div className="vans-list-container">
           {vans.map(({ id, imageUrl, name, price, type }) => {
             return (
-              <div className="vans-layout" key={id}>
+              <Link to={`/vans/${id}`} className="vans-layout" key={id}>
                 <img
                   src={imageUrl}
                   alt={`picture of ${name} van`}
@@ -42,7 +43,7 @@ const Vans = () => {
                   </div>
                  <VanOptions type={type} />
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
