@@ -13,6 +13,9 @@ const Navbar = () => {
         <Link className="nav-item first-color " to="/about">
           About
         </Link>
+        <Link className="nav-item first-color " to="/host">
+          Host
+        </Link>
         <Link className="nav-item first-color" to="/vans">
           Vans List
         </Link>

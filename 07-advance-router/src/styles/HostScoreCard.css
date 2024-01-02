@@ -1,0 +1,11 @@
+.host-score-card{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.score{
+    font-size: 1.7rem;
+}
+.rating-span{
+    font-weight: 500;
+}
