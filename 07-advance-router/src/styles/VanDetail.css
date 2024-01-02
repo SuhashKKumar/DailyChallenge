@@ -6,11 +6,20 @@
 }
 .van-sub-container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items:center;
+    /* justify-content: space-evenly; */
+    max-width: 85%;
 }
 .van-sub-container-left{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    align-items: start;
+}
+.van-detail-btn{
+    padding: 1em 6em;
+    border-radius: 0.4rem;
+}
+.loading{
+    margin-top: 2em ;
 }
