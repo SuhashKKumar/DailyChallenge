@@ -1,8 +1,9 @@
 const HostCard = (prop) => {
+  const {children, dynamicStyle,para}=prop
   return (
-    <div className={`host-primary-container ${prop.dynamicStyle}`}>
-    {prop.children}
-      <p className="para">Details</p>
+    <div className={`host-primary-container ${dynamicStyle}`}>
+    {children}
+      <p className="para">{para}</p>
     </div>
   );
 };
