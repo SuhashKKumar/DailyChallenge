@@ -24,7 +24,7 @@ const HostVanInfo = () => {
       <div className="white-bg host-vans-info-container ">
         <HostVanCardLarge hostVanInfo={hostVanInfo} />
         <HostVanNavbar />
-        <Outlet />
+        <Outlet context={hostVanInfo} />
       </div>
     </div>
   );
