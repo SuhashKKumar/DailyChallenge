@@ -24,3 +24,9 @@
     font-size: 4rem;
     font-weight: 800;
 }
+.view-all-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}

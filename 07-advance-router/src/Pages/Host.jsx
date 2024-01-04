@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Host.css";
 import HostScoreCard from "../Components/HostScoreCard";
 import HostCard from "../Components/HostCard";
+import VansList from "../Components/VansList";
 const Host = () => {
   return (
     <div className="host-container">
@@ -11,7 +12,7 @@ const Host = () => {
           <h1 className="host-headline">Welcome!</h1>
           <p className="para">
             Income last
-            <Link to='/host/income' >
+            <Link to="/host/income">
               <u> 30 days</u>
             </Link>
           </p>
@@ -24,6 +25,9 @@ const Host = () => {
       <HostCard dynamicStyle={"third-bg"} para={"View all"}>
         <h2>Your listed vans</h2>
       </HostCard>
+      <VansList />
+      <VansList />
+      <VansList />
     </div>
   );
 };
