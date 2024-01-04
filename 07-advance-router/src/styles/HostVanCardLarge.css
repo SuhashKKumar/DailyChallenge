@@ -1,0 +1,16 @@
+.host-vans-card-large-container{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+.host-vans-card-large-container img{
+    border-radius: 0.4em;
+}
+.host-vans-card-large-sub-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.host-vans-card-large-sub-container p{
+    font-size: 1.5rem
+}

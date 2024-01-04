@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
-import "../styles/HostNavbar.css";
 
-const HostNavbar = () => {
+const HostVanNavbar = () => {
   return (
     <div className="nav-items nav-container ">
       <NavLink
@@ -13,7 +12,7 @@ const HostNavbar = () => {
         to="."
         end
       >
-        Dashboard
+        Details
       </NavLink>
       <NavLink
         className={({ isActive }) =>
@@ -21,33 +20,22 @@ const HostNavbar = () => {
             ? "nav-item black-color nav-item-active"
             : " nav-item black-color"
         }
-        to="income"
+        to="pricing"
       >
-        Income
+        Pricing
       </NavLink>
-      <NavLink
-      className={({ isActive }) =>
-        isActive
-          ? "nav-item black-color nav-item-active"
-          : " nav-item black-color"
-      }
-      to="vans"
-    >
-      Vans
-    </NavLink>
       <NavLink
         className={({ isActive }) =>
           isActive
             ? "nav-item black-color nav-item-active"
             : " nav-item black-color"
         }
-        to="reviews"
+        to="photos"
       >
-        Reviews
+        Photos
       </NavLink>
-
     </div>
   );
 };
 
-export default HostNavbar;
+export default HostVanNavbar;

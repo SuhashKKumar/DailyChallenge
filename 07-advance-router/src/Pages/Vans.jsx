@@ -23,7 +23,7 @@ const Vans = () => {
         </div>
       </div>
       <div className="for-center">
-        <div className="vans-list-container">
+        <div className="vans-list-grid-container">
           {vans.map(({ id, imageUrl, name, price, type }) => {
             return (
               <Link to={`/vans/${id}`} className="vans-layout" key={id}>
