@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 import HostVanCardLarge from "../Components/HostVanCardLarge";
 import HostVanNavbar from "../Components/HostVanNavbar";
+import "../styles/HostVanInfo.css";
 
 const HostVanInfo = () => {
   const { id } = useParams();
@@ -14,11 +15,17 @@ const HostVanInfo = () => {
       .then((res) => setHostVanInfo(...res.vans))
       .catch((error) => console.log(error));
   }, [id]);
-  if(!hostVanInfo) return <h1>Loading...</h1>
+  if (!hostVanInfo) return <h1>Loading...</h1>;
   return (
     <div>
-      <HostVanCardLarge hostVanInfo={hostVanInfo} />
-      <HostVanNavbar />
+      <Link to=".." relative="path">
+        <u>← Back to all vans</u>
+      </Link>
+      <div className="white-bg host-vans-info-container ">
+        <HostVanCardLarge hostVanInfo={hostVanInfo} />
+        <HostVanNavbar />
+        <Outlet />
+      </div>
     </div>
   );
 };
