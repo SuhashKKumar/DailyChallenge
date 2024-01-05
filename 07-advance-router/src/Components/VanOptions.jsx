@@ -6,7 +6,7 @@ const VanOptions = (prop) => {
         type === "simple"
           ? "black-bg"
           : type === "luxury"
-          ? "second-bg"
+          ? "first-bg"
           : "fourth-bg black-color"
       }`}
     >
